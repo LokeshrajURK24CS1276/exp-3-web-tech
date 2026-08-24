@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LensArt – Professional Photo Editing Studio. Color grading, skin retouching, background swap, and photo restoration services in Coimbatore.">
+  <title>LensArt – Photo Editing Studio</title>
+  <style>
+
+    /* ══════════════════════════════════════════
+       BASE & FONT
+    ══════════════════════════════════════════ */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: georgia, garamond, serif;   /* font-family */
+      font-size: 16px;                          /* font-size */
+      font-weight: normal;                      /* font-weight */
+      font-style: normal;                       /* font-style */
+      background-color: #0e0e0e;               /* background-color */
+      color: #e0d8cc;
+      margin-top: 0;                            /* margin-top */
+      margin-bottom: 0;                         /* margin-bottom */
+      margin-left: 0;                           /* margin-left */
+      margin-right: 0;                          /* margin-right */
+      padding-top: 0;                           /* padding-top */
+      padding-bottom: 0;                        /* padding-bottom */
+      padding-left: 0;                          /* padding-left */
+      padding-right: 0;                         /* padding-right */
+    }
+
+    /* ══════════════════════════════════════════
+       HEADER
+    ══════════════════════════════════════════ */
+    .header {
+      background-color: #0a0a0a;               /* background-color */
+      background-image: url("../photo+editig.webp"); /* background-image */
+      background-repeat: no-repeat;            /* background-repeat */
+      background-size: cover;
+      background-position: center;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    /* Dark overlay on hero bg */
+    .header-inner {
+      background-color: rgba(0,0,0,0.72);
+      padding-top: 40px;
+      padding-bottom: 50px;
+      padding-left: 60px;
+      padding-right: 60px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .header-text { flex: 1; }
+    .header-text h1 {
+      font-size: 54px;                          /* font-size */
+      font-weight: bolder;                      /* font-weight */
+      font-style: normal;                       /* font-style */
+      color: #c9a84c;                           /* color */
+      letter-spacing: 5px;                      /* letter-spacing */
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.8); /* text-shadow */
+      text-decoration: none;                    /* text-decoration */
+      margin-top: 0;                            /* margin-top */
+      margin-bottom: 8px;                       /* margin-bottom */
+    }
+    .header-text .tagline {
+      font-size: 18px;
+      font-style: italic;                       /* font-style */
+      color: #e0d8cc;
+      letter-spacing: 3px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .header-text .sub {
+      font-size: 15px;
+      color: #aaa;
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-align: left;                         /* text-align */
+      line-height: 1.7;
+    }
+    .header-img { flex: 1; }
+    .header-img img {
+      display: block;                           /* display: block */
+      width: 100%;
+      height: 380px;                            /* height */
+      object-fit: cover;
+      border: 3px solid #c9a84c;
+    }
+    .cta-btn {
+      display: inline;                          /* display: inline */
+      background-color: #c9a84c;
+      color: #0a0a0a;
+      text-decoration: none;                    /* text-decoration */
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding-top: 14px;                        /* padding-top */
+      padding-bottom: 14px;                     /* padding-bottom */
+      padding-left: 32px;                       /* padding-left */
+      padding-right: 32px;                      /* padding-right */
+      margin-right: 12px;                       /* margin-right */
+      border: 2px solid #c9a84c;
+    }
+    .cta-btn:link    { background-color: #c9a84c; color: #0a0a0a; }     /* :link */
+    .cta-btn:visited { background-color: #b5923e; color: #0a0a0a; }     /* :visited */
+    .cta-btn:hover   { background-color: lightgreen; color: #0a0a0a; border-color: lightgreen; } /* :hover */
+    .cta-btn:active  { background-color: hotpink;    color: #0a0a0a; border-color: hotpink; }   /* :active */
+    .cta-outline {
+      display: inline;
+      background-color: transparent;
+      color: #c9a84c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 32px;
+      padding-right: 32px;
+      border: 2px solid #c9a84c;
+    }
+    .cta-outline:link    { background-color: transparent; color: #c9a84c; }
+    .cta-outline:visited { background-color: transparent; color: #e8c97a; }
+    .cta-outline:hover   { background-color: #c9a84c;    color: #0a0a0a; }
+    .cta-outline:active  { background-color: hotpink;    color: #0a0a0a; border-color: hotpink; }
+
+    /* ══════════════════════════════════════════
+       NAVIGATION
+    ══════════════════════════════════════════ */
+    .nav {
+      background-color: #111;
+      text-align: center;                       /* text-align */
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 2px solid #c9a84c;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav a {
+      display: inline;                          /* display: inline */
+      color: #e0d8cc;
+      text-decoration: none;                    /* text-decoration */
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-left: 4px;                         /* margin-left */
+      margin-right: 4px;                        /* margin-right */
+      padding-top: 16px;                        /* padding-top */
+      padding-bottom: 16px;                     /* padding-bottom */
+      padding-left: 18px;                       /* padding-left */
+      padding-right: 18px;                      /* padding-right */
+    }
+    .nav a:link    { color: #e0d8cc; background-color: transparent; }  /* :link */
+    .nav a:visited { color: #c9a84c; background-color: transparent; }  /* :visited */
+    .nav a:hover   { color: #0a0a0a; background-color: lightgreen;  text-decoration: underline; } /* :hover */
+    .nav a:active  { color: #0a0a0a; background-color: hotpink;     }  /* :active */
+
+    /* ══════════════════════════════════════════
+       LAYOUT CONTAINER – Normal Flow
+    ══════════════════════════════════════════ */
+    .container {
+      width: 90%;                               /* width */
+      margin-top: 0;                            /* margin-top */
+      margin-bottom: 0;                         /* margin-bottom */
+      margin-left: auto;                        /* margin-left */
+      margin-right: auto;                       /* margin-right */
+    }
+
+    /* ══════════════════════════════════════════
+       SECTION COMMON
+    ══════════════════════════════════════════ */
+    .section {
+      background-color: #141414;
+      margin-top: 30px;                         /* margin-top */
+      margin-bottom: 0;                         /* margin-bottom */
+      padding-top: 40px;                        /* padding-top */
+      padding-bottom: 40px;                     /* padding-bottom */
+      padding-left: 40px;                       /* padding-left */
+      padding-right: 40px;                      /* padding-right */
+      border-top: 3px solid #c9a84c;
+    }
+    .section-title {
+      font-size: 28px;                          /* font-size */
+      font-weight: bold;                        /* font-weight */
+      color: #c9a84c;                           /* color */
+      letter-spacing: 3px;                      /* letter-spacing */
+      text-align: center;                       /* text-align */
+      text-decoration: underline;              /* text-decoration */
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* text-shadow */
+      margin-top: 0;                            /* margin-top */
+      margin-bottom: 8px;                       /* margin-bottom */
+    }
+    .section-sub {
+      font-size: 15px;
+      font-style: italic;                       /* font-style */
+      color: #888;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    /* ══════════════════════════════════════════
+       SERVICES GRID
+    ══════════════════════════════════════════ */
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .service-card {
+      flex: 1 1 180px;
+      background-color: #1c1c1c;
+      border-top: 4px solid #c9a84c;
+      padding-top: 24px;                        /* padding-top */
+      padding-bottom: 24px;                     /* padding-bottom */
+      padding-left: 20px;                       /* padding-left */
+      padding-right: 20px;                      /* padding-right */
+      text-align: center;
+    }
+    .service-card .icon {
+      font-size: 36px;
+      display: block;                           /* display: block */
+      margin-bottom: 12px;
+    }
+    .service-card h3 {
+      color: #c9a84c;                           /* color */
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .service-card .price {
+      color: #c9a84c;
+      font-weight: bolder;                      /* font-weight: bolder */
+      font-size: 20px;
+      display: block;
+    }
+
+    /* ══════════════════════════════════════════
+       SERVICES LIST (circle style)
+    ══════════════════════════════════════════ */
+    .services-list {
+      list-style-type: circle;                  /* list-style-type: circle */
+      margin-top: 16px;                         /* margin-top */
+      margin-bottom: 16px;                      /* margin-bottom */
+      margin-left: 30px;                        /* margin-left */
+      margin-right: 0;                          /* margin-right */
+      padding-left: 10px;
+      color: #bbb;
+    }
+    .services-list li {
+      margin-top: 8px;                          /* margin-top */
+      margin-bottom: 8px;                       /* margin-bottom */
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    /* ══════════════════════════════════════════
+       TABLE
+    ══════════════════════════════════════════ */
+    table {
+      width: 100%;                              /* width */
+      height: auto;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td { border: 1px solid #2e2e2e; }
+    th {
+      background-color: #c9a84c;
+      color: #0a0a0a;
+      padding-top: 13px;                        /* padding-top */
+      padding-bottom: 13px;                     /* padding-bottom */
+      padding-left: 16px;                       /* padding-left */
+      padding-right: 16px;                      /* padding-right */
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    td {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: center;                       /* text-align */
+      color: #ccc;
+      font-size: 14px;
+    }
+    tr:nth-child(even) td { background-color: #1a1a1a; }
+    tr:nth-child(odd)  td { background-color: #141414; }
+
+    /* ══════════════════════════════════════════
+       WHY CHOOSE US – MULTICOLUMN LAYOUT
+    ══════════════════════════════════════════ */
+    .why-section {
+      background-color: #111;
+      margin-top: 30px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-top: 3px solid #c9a84c;
+    }
+    .multicol {
+      column-count: 3;                          /* multicolumn layout */
+      column-gap: 36px;
+      column-rule: 2px solid #c9a84c;
+      margin-top: 20px;
+    }
+    .multicol-entry { break-inside: avoid; margin-bottom: 28px; }
+    .multicol-entry strong {
+      color: #c9a84c;
+      font-weight: bold;                        /* font-weight */
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: block;                           /* display: block */
+      margin-bottom: 8px;
+      text-decoration: overline;               /* text-decoration: overline */
+    }
+    .multicol-entry p {
+      color: #999;
+      font-size: 14px;
+      text-align: justify;                      /* text-align: justify */
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+
+    /* ══════════════════════════════════════════
+       GALLERY / BEFORE-AFTER
+    ══════════════════════════════════════════ */
+    .gallery-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+      align-items: stretch;
+    }
+    .gallery-card {
+      flex: 1;
+      background-color: #1c1c1c;
+      border: 1px solid #2e2e2e;
+      border-top: 4px solid #c9a84c;
+      padding-top: 0;
+      padding-bottom: 16px;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: hidden;
+    }
+    .gallery-card img {
+      display: block;
+      width: 100%;                              /* width */
+      height: 260px;                            /* height */
+      object-fit: cover;
+    }
+    .gallery-card h3 {
+      color: #c9a84c;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .gallery-card p {
+      color: #888;
+      font-size: 13px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* ══════════════════════════════════════════
+       MEDIA ROW (video + audio)
+    ══════════════════════════════════════════ */
+    .media-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+      align-items: flex-start;
+    }
+    .media-half {
+      flex: 1;
+      background-color: #1c1c1c;
+      border-top: 4px solid #c9a84c;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .media-half h3 {
+      color: #c9a84c;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+    .media-half p {
+      color: #888;
+      font-size: 14px;
+      margin-top: 0;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    video { width: 100%; display: block; margin-top: 10px; }
+    audio { width: 100%; display: block; margin-top: 10px; }
+
+    /* ══════════════════════════════════════════
+       BROCHURE + MAP
+    ══════════════════════════════════════════ */
+    .embed-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .embed-half {
+      flex: 1;
+      background-color: #1c1c1c;
+      border-top: 4px solid #c9a84c;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .embed-half h3 {
+      color: #c9a84c;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .embed-half p {
+      color: #888;
+      font-size: 14px;
+      margin-top: 0;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    embed  { width: 100%; height: 420px; display: block; }
+    iframe { width: 100%; height: 340px; border: none; display: block; }
+
+    /* ══════════════════════════════════════════
+       BOOKING FORM
+    ══════════════════════════════════════════ */
+    .form-wrap {
+      background-color: #1a1a1a;
+      border-top: 4px solid #c9a84c;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 36px;
+      padding-right: 36px;
+      margin-top: 24px;
+    }
+    fieldset {
+      border: 1px solid #2e2e2e;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      color: #c9a84c;
+      letter-spacing: 2px;
+      font-size: 14px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    label {
+      display: block;
+      font-weight: bold;                        /* font-weight */
+      color: #c9a84c;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      margin-top: 14px;
+    }
+    input[type=text], input[type=email], input[type=tel],
+    input[type=date], input[type=number], select, textarea {
+      width: 100%;
+      background-color: #111;
+      color: #e0d8cc;
+      border: 1px solid #333;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-family: georgia, garamond, serif;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    input[type=radio], input[type=checkbox] {
+      accent-color: #c9a84c;
+      margin-right: 6px;
+    }
+    .radio-group, .check-group {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .radio-group label, .check-group label {
+      display: inline;
+      font-weight: normal;
+      color: #ccc;
+      letter-spacing: 0;
+      margin-right: 20px;
+    }
+    .btn {
+      background-color: #c9a84c;
+      color: #0a0a0a;
+      border: none;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 28px;
+      padding-right: 28px;
+      margin-top: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: georgia, garamond, serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .btn:hover { background-color: lightgreen; }
+    .btn-reset {
+      background-color: #222;
+      color: #c9a84c;
+      border: 1px solid #c9a84c;
+    }
+    .btn-reset:hover { background-color: hotpink; color: #0a0a0a; border-color: hotpink; }
+
+    /* Validation */
+    .err {
+      color: #e74c3c;
+      font-size: 12px;
+      display: block;
+      margin-top: 3px;
+      font-weight: normal;
+    }
+    input.invalid, select.invalid, textarea.invalid { border: 2px solid #e74c3c !important; }
+    input.valid,   select.valid,   textarea.valid   { border: 2px solid #27ae60 !important; }
+
+    /* Modal */
+    #successModal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 9999; align-items: center; justify-content: center; }
+    #successModal.show { display: flex; }
+    .modal-box {
+      background-color: #1a1a1a;
+      border-top: 5px solid #c9a84c;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 440px;
+      width: 90%;
+      text-align: center;
+    }
+    .modal-box h3 { color: #c9a84c; margin: 0 0 12px; font-size: 24px; letter-spacing: 2px; }
+    .modal-box p  { color: #aaa;    margin: 0 0 24px; line-height: 1.7; }
+
+
+    /* ══════════════════════════════════════════
+       CONTACT
+    ══════════════════════════════════════════ */
+    .contact-grid {
+      display: flex;
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .contact-info {
+      flex: 1;
+      background-color: #1a1a1a;
+      border-top: 4px solid #c9a84c;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+    .contact-info p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #bbb;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .contact-info p b { color: #c9a84c; }
+    .contact-info ul {
+      list-style-type: disc;                    /* list-style-type: disc */
+      margin-left: 20px;
+      color: #bbb;
+      font-size: 14px;
+    }
+    .contact-info ul li { margin-top: 6px; margin-bottom: 6px; }
+    .contact-map { flex: 1; }
+
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    .footer {
+      background-color: #0a0a0a;
+      color: #c9a84c;
+      text-align: center;                       /* text-align */
+      padding-top: 22px;                        /* padding-top */
+      padding-bottom: 22px;                     /* padding-bottom */
+      padding-left: 20px;                       /* padding-left */
+      padding-right: 20px;                      /* padding-right */
+      margin-top: 30px;                         /* margin-top */
+      letter-spacing: 2px;
+      font-size: 13px;
+      border-top: 2px solid #c9a84c;
+    }
+    .footer p { margin-top: 4px; margin-bottom: 4px; }
+    .footer a:link    { color: #c9a84c; }
+    .footer a:visited { color: #e8c97a; }
+    .footer a:hover   { color: lightgreen; text-decoration: underline; }
+    .footer a:active  { color: hotpink; }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE – TABLET  (≤ 900px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 900px) {
+
+      /* Container */
+      .container { width: 95%; }
+
+      /* Header / Hero: stack text over image */
+      .header-inner {
+        flex-direction: column;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 32px;
+        padding-bottom: 36px;
+        gap: 24px;
+      }
+      .header-text h1 { font-size: 38px; letter-spacing: 3px; }
+      .header-text .tagline { font-size: 15px; }
+      .header-img img { height: 260px; }
+
+      /* Navigation: wrap to two rows, smaller padding */
+      .nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      /* Section padding tighter */
+      .section,
+      .why-section {
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
+
+      /* Service cards: 2-column grid on tablet */
+      .service-card { flex: 1 1 calc(50% - 20px); }
+
+      /* Multicolumn → 2 columns */
+      .multicol { column-count: 2; }
+
+      /* Gallery: 2 cards per row */
+      .gallery-row { flex-wrap: wrap; }
+      .gallery-card { flex: 1 1 calc(50% - 24px); }
+
+      /* Media row: stack vertically */
+      .media-row { flex-direction: column; }
+
+      /* Contact: stack */
+      .contact-grid { flex-direction: column; }
+      .contact-map iframe { height: 260px; }
+
+      /* Table: allow horizontal scroll without overflow */
+      table { font-size: 13px; }
+      th, td { padding-left: 10px; padding-right: 10px; }
+
+      /* Form wrap */
+      .form-wrap {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      /* CTA buttons */
+      .cta-btn, .cta-outline {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      /* Section title */
+      .section-title { font-size: 22px; letter-spacing: 2px; }
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE – MOBILE  (≤ 600px)
+    ══════════════════════════════════════════ */
+    @media (max-width: 600px) {
+
+      /* Container full width */
+      .container { width: 100%; }
+
+      /* Body font slightly smaller */
+      body { font-size: 14px; }
+
+      /* Header: full single-column, compact */
+      .header-inner {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 24px;
+        padding-bottom: 28px;
+        gap: 18px;
+      }
+      .header-text h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+      }
+      .header-text .tagline { font-size: 13px; letter-spacing: 1px; }
+      .header-text .sub { font-size: 13px; }
+      .header-img img { height: 200px; }
+
+      /* Nav: wrap all links, smaller text */
+      .nav { padding-top: 0; padding-bottom: 0; }
+      .nav a {
+        font-size: 11px;
+        letter-spacing: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      /* Sections */
+      .section,
+      .why-section {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin-top: 18px;
+      }
+
+      /* Section title */
+      .section-title { font-size: 18px; letter-spacing: 1px; }
+      .section-sub   { font-size: 13px; margin-bottom: 18px; }
+
+      /* Service cards: full width stack */
+      .services-grid { flex-direction: column; gap: 14px; }
+      .service-card  { flex: 1 1 100%; }
+
+      /* Multicolumn → single column on mobile */
+      .multicol { column-count: 1; column-rule: none; }
+
+      /* Gallery: full width stack */
+      .gallery-row { flex-direction: column; gap: 16px; }
+      .gallery-card { flex: 1 1 100%; }
+      .gallery-card img { height: 200px; }
+
+      /* Media: stacked already, just tighten padding */
+      .media-row { flex-direction: column; gap: 16px; }
+      .media-half {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+
+      /* Table: horizontal scroll container */
+      .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table { min-width: 480px; font-size: 12px; }
+      th, td {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      /* Form */
+      .form-wrap {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 14px;
+      }
+      fieldset {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .radio-group label,
+      .check-group label {
+        display: block;
+        margin-bottom: 6px;
+        margin-right: 0;
+      }
+      .btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      /* Contact */
+      .contact-grid { flex-direction: column; gap: 16px; }
+      .contact-info {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+      .contact-map iframe { height: 220px; }
+
+      /* CTA buttons: block & full width */
+      .cta-btn, .cta-outline {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 13px;
+      }
+
+      /* Footer */
+      .footer {
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      /* Modal */
+      .modal-box {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER / HERO
+══════════════════════════════════════════ -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-text">
+      <h1>LensArt</h1>
+      <p class="tagline">Professional Photo Editing Studio</p>
+      <p class="sub">
+        We transform your raw photographs into stunning masterpieces.<br>
+        Color grading &bull; Skin retouching &bull; Background swap &bull; Photo restoration<br>
+        Trusted by 500+ photographers across India.
+      </p>
+      <a href="#book" class="cta-btn">Book Now</a>
+      <a href="#services" class="cta-outline">Our Services</a>
+    </div>
+    <div class="header-img">
+      <img src="../LensArt.png" alt="LensArt Before & After Portrait Edit" />
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     STICKY NAVIGATION
+══════════════════════════════════════════ -->
+<div class="nav">
+  <a href="#services">Services</a>
+  <a href="#whyus">Why Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#media">Demo</a>
+  <a href="#book">Book Now</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="container">
+
+  <!-- ══════════════════════════════════════════
+       SERVICES – Normal Flow
+  ══════════════════════════════════════════ -->
+  <div class="section" id="services">
+    <h2 class="section-title">Our Editing Services</h2>
+    <p class="section-sub">Professional retouching for every kind of photography</p>
+
+    <!-- Service cards – Normal flow block layout -->
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="icon">🎨</span>
+        <h3>Color Grading</h3>
+        <p>Hollywood-style color correction and LUT application for portraits, travel, and wedding photography.</p>
+
+      </div>
+      <div class="service-card">
+        <span class="icon">✨</span>
+        <h3>Skin Retouching</h3>
+        <p>Blemish removal, frequency separation, and dodge &amp; burn techniques for flawless fashion edits.</p>
+
+      </div>
+      <div class="service-card">
+        <span class="icon">🖼</span>
+        <h3>Background Swap</h3>
+        <p>Precision masking and background replacement for products, portraits, and e-commerce catalogs.</p>
+
+      </div>
+      <div class="service-card">
+        <span class="icon">🔧</span>
+        <h3>Basic Retouch</h3>
+        <p>Exposure, white balance, sharpening, noise reduction &mdash; quick fixes for everyday photography.</p>
+
+      </div>
+      <div class="service-card">
+        <span class="icon">🕰</span>
+        <h3>Photo Restoration</h3>
+        <p>Bring your damaged or faded old prints back to life with expert digital restoration techniques.</p>
+
+      </div>
+    </div>
+
+    <!-- Add-ons list using list-style-type: circle -->
+    <h3 style="color:#c9a84c; margin-top:34px; letter-spacing:2px; font-size:18px; text-decoration:underline;">Available Add-ons</h3>
+    <ul class="services-list">
+      <li><b>Watermark Removal</b> &ndash; Clean, seamless removal of any watermark or logo</li>
+      <li><b>HDR Merge</b> &ndash; Combine multiple exposures into a single high-dynamic-range image</li>
+      <li><b>Web Resize &amp; Export</b> &ndash; Optimized JPG/PNG/WebP output for social media or web</li>
+      <li><b>Noise Reduction</b> &ndash; AI-assisted reduction of grain and digital noise</li>
+      <li><b>Object Removal</b> &ndash; Remove unwanted people, objects, or distractions from scenes</li>
+      <li><b>Vintage Film Effect</b> &ndash; Apply authentic film grain, fading, and light leak effects</li>
+    </ul>
+
+    <!-- Packages table -->
+    <h3 style="color:#c9a84c; margin-top:30px; letter-spacing:2px; font-size:18px; text-decoration:underline;">Pricing Packages</h3>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Service</th><th>Best For</th><th>Turnaround</th><th>Price / Image</th><th>Rush Available</th></tr>
+      <tr><td>Basic Retouch</td><td>Portraits / Events</td><td>24 hrs</td><td>&#8377;150</td><td>Yes (+50%)</td></tr>
+      <tr><td>Skin Retouching</td><td>Fashion / Beauty</td><td>48 hrs</td><td>&#8377;350</td><td>Yes (+50%)</td></tr>
+      <tr><td>Color Grading</td><td>Wedding / Travel</td><td>24 hrs</td><td>&#8377;200</td><td>Yes (+50%)</td></tr>
+      <tr><td>Background Swap</td><td>Product / E-comm</td><td>12 hrs</td><td>&#8377;100</td><td>Yes (+30%)</td></tr>
+      <tr><td>Photo Restoration</td><td>Old / Damaged Prints</td><td>72 hrs</td><td>&#8377;500</td><td>No</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       WHY CHOOSE US – MULTICOLUMN LAYOUT
+  ══════════════════════════════════════════ -->
+  <div class="why-section" id="whyus">
+    <h2 class="section-title" style="text-decoration:overline;">Why Choose LensArt?</h2>
+    <p class="section-sub">Our studio stands out with quality, speed, and creative precision</p>
+    <div class="multicol">
+      <div class="multicol-entry">
+        <strong>&#9733; Expert Retouchers</strong>
+        <p>Our team comprises certified photo editors with over a decade of experience in fashion, wedding, commercial, and fine-art photography. Every edit is reviewed by a senior retoucher before delivery, ensuring the highest quality standards on every single image.</p>
+      </div>
+      <div class="multicol-entry">
+        <strong>&#9733; Lightning Fast Delivery</strong>
+        <p>We understand that deadlines drive business. LensArt offers industry-leading turnaround times starting from just 12 hours for basic edits. Rush orders are accepted for most services. Track your order in real time via our secure client portal.</p>
+      </div>
+      <div class="multicol-entry">
+        <strong>&#9733; Transparent Pricing</strong>
+        <p>No hidden charges, no subscription traps. Pay only for what you need. Our per-image pricing model is designed for photographers, studios, and e-commerce businesses of all sizes &mdash; from individual freelancers to large-scale catalog operations.</p>
+      </div>
+      <div class="multicol-entry">
+        <strong>&#9733; 100% Satisfaction</strong>
+        <p>Not happy with the result? We offer unlimited revisions until you are fully satisfied. Our client retention rate exceeds 94%, a testament to our commitment to delivering outstanding results on every project, no matter the complexity.</p>
+      </div>
+      <div class="multicol-entry">
+        <strong>&#9733; Secure File Handling</strong>
+        <p>Your images are uploaded through an encrypted channel and stored on our private, isolated servers. We never share client files with third parties and permanently delete them from our systems 30 days after final delivery.</p>
+      </div>
+      <div class="multicol-entry">
+        <strong>&#9733; Bulk Discounts</strong>
+        <p>Processing a large batch? Orders above 50 images receive a flat 20% discount. Orders of 200+ images qualify for a dedicated editor, priority queue, and a customised quote tailored to your specific project requirements.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       GALLERY – BEFORE / AFTER
+  ══════════════════════════════════════════ -->
+  <div class="section" id="gallery">
+    <h2 class="section-title">Before &amp; After Gallery</h2>
+    <p class="section-sub">Real results from real projects</p>
+    <div class="gallery-row">
+      <div class="gallery-card">
+        <img src="../photo-hero.png" alt="Landscape Color Grading – Before & After">
+        <h3>Landscape Color Grading</h3>
+        <p>A dramatic transformation using warm-tone LUTs to turn a flat, overcast shot into a vibrant golden-hour scene.</p>
+      </div>
+      <div class="gallery-card">
+        <img src="../photo+editig.webp" alt="Portrait Skin Retouching – Before & After">
+        <h3>Portrait Skin Retouching</h3>
+        <p>Frequency separation technique applied to achieve flawless skin while preserving natural skin texture and tone.</p>
+      </div>
+      <div class="gallery-card">
+        <img src="../services.png" alt="LensArt Services Brochure">
+        <h3>Services Snapshot</h3>
+        <p>A quick visual reference of our core services, pricing, and what makes LensArt the preferred studio for professionals.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MEDIA DEMO – Video & Audio
+  ══════════════════════════════════════════ -->
+  <div class="section" id="media">
+    <h2 class="section-title">Studio Demo &amp; Audio Tour</h2>
+    <p class="section-sub">See our editing process in action and hear from our team</p>
+    <div class="media-row">
+      <div class="media-half">
+        <h3>&#9654; Editing Process Demo</h3>
+        <p>
+          Watch our lead editor walk through a complete skin retouching session from raw import to final export in Adobe Lightroom and Photoshop. Learn the techniques we use on every portrait order.
+        </p>
+        <video controls>
+          <source src="../video.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="media-half">
+        <h3>&#127911; Studio Introduction</h3>
+        <p>
+          Hear from our founder and lead editor, Arjun Krishnan, as he talks about the LensArt story, our editing philosophy, and what you can expect when you submit your first order with us.
+        </p>
+        <audio controls>
+          <source src="../studio-intro.mp3" type="audio/mpeg">
+          Your browser does not support the HTML5 audio element.
+        </audio>
+        <br>
+        <h3 style="margin-top:24px;">&#128196; Services Brochure</h3>
+        <p>Browse our full services guide and pricing list as an embedded document below.</p>
+        <embed type="application/pdf" src="../exp 2/services-guide.pdf">
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       BOOKING FORM
+  ══════════════════════════════════════════ -->
+  <div class="section" id="book">
+    <h2 class="section-title">Book an Editing Session</h2>
+    <p class="section-sub">Fill in the form below to place your order and we'll confirm within 2 hours</p>
+
+    <div class="form-wrap">
+      <form id="bookForm" novalidate>
+        <fieldset>
+          <legend>&#128100; Your Details</legend>
+
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="name" placeholder="e.g. Priya Sharma">
+          <span class="err" id="nameErr"></span>
+
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" placeholder="e.g. priya@studio.com">
+          <span class="err" id="emailErr"></span>
+
+          <label for="fphone">Mobile Number</label>
+          <input type="tel" id="fphone" name="phone" placeholder="10-digit Indian mobile number">
+          <span class="err" id="phoneErr"></span>
+        </fieldset>
+
+        <fieldset>
+          <legend>&#128247; Order Details</legend>
+
+          <label for="fservice">Select Primary Service</label>
+          <select id="fservice" name="service">
+            <option value="">-- Choose a Service --</option>
+            <option>Basic Retouch &ndash; &#8377;150</option>
+            <option>Skin Retouching &ndash; &#8377;350</option>
+            <option>Color Grading &ndash; &#8377;200</option>
+            <option>Background Swap &ndash; &#8377;100</option>
+            <option>Photo Restoration &ndash; &#8377;500</option>
+          </select>
+          <span class="err" id="serviceErr"></span>
+
+          <label for="fqty">Number of Photos</label>
+          <input type="number" id="fqty" name="qty" min="1" max="999" placeholder="e.g. 25">
+          <span class="err" id="qtyErr"></span>
+
+          <label for="fdate">Required Delivery Date</label>
+          <input type="date" id="fdate" name="date">
+          <span class="err" id="dateErr"></span>
+
+          <label>Output Format</label>
+          <div class="radio-group">
+            <label><input type="radio" name="fmt" value="jpg"> JPEG</label>
+            <label><input type="radio" name="fmt" value="png"> PNG</label>
+            <label><input type="radio" name="fmt" value="tiff"> TIFF</label>
+            <label><input type="radio" name="fmt" value="webp"> WebP</label>
+          </div>
+          <span class="err" id="fmtErr"></span>
+
+          <label>Add-ons (select all that apply)</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="wm"> Watermark Removal</label>
+            <label><input type="checkbox" name="hdr"> HDR Merge</label>
+            <label><input type="checkbox" name="resize"> Web Resize &amp; Export</label>
+            <label><input type="checkbox" name="noise"> Noise Reduction</label>
+            <label><input type="checkbox" name="obj"> Object Removal</label>
+            <label><input type="checkbox" name="film"> Vintage Film Effect</label>
+          </div>
+
+          <label for="fnotes">Special Instructions</label>
+          <textarea id="fnotes" rows="4" name="notes" placeholder="E.g. preferred color tone, reference images, specific areas to retouch..."></textarea>
+          <span class="err" id="notesErr"></span>
+        </fieldset>
+
+        <input type="submit" value="Submit Order" class="btn">
+        <input type="reset"  value="Clear Form"  class="btn btn-reset" onclick="clearErrors()">
+      </form>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal">
+      <div class="modal-box">
+        <h3>&#10003; Order Received!</h3>
+        <p>Thank you for choosing LensArt.<br>Your editing request has been logged and we'll confirm via email within 2 hours.</p>
+        <button class="btn" onclick="document.getElementById('successModal').classList.remove('show');document.getElementById('bookForm').reset();clearErrors();">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT + MAP
+  ══════════════════════════════════════════ -->
+  <div class="section" id="contact">
+    <h2 class="section-title">Contact LensArt</h2>
+    <p class="section-sub">Reach out for quotes, bulk orders, or any queries</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><b>&#128231; Email:</b> hello@lensart.in</p>
+        <p><b>&#128222; Phone:</b> +91 98765 43210</p>
+        <p><b>&#128336; Studio Hours:</b> Mon &ndash; Sat, 9 AM &ndash; 7 PM IST</p>
+        <p><b>&#128205; Location:</b> Coimbatore, Tamil Nadu, India</p>
+        <p><b>&#127760; We work with clients from:</b></p>
+        <ul>
+          <li>Portrait &amp; Wedding Photographers</li>
+          <li>Fashion &amp; Beauty Studios</li>
+          <li>E-commerce &amp; Product Brands</li>
+          <li>Real Estate Agencies</li>
+          <li>Individual Hobbyists</li>
+        </ul>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps?q=Coimbatore,Tamil+Nadu&output=embed" title="LensArt Studio Location – Coimbatore"></iframe>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end .container -->
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<div class="footer">
+  <p>&#169; 2025 LensArt Photo Editing Studio &mdash; All Rights Reserved</p>
+  <p>Coimbatore, Tamil Nadu &nbsp;&bull;&nbsp; <a href="mailto:hello@lensart.in">hello@lensart.in</a> &nbsp;&bull;&nbsp; URK24CS1276</p>
+</div>
+
+<script>
+/* ── Regex patterns ── */
+const RX = {
+  name  : /^[A-Za-z\s]{2,50}$/,
+  email : /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/,
+  phone : /^[6-9]\d{9}$/,
+  qty   : /^[1-9]\d{0,2}$/,
+  notes : /^[\s\S]{0,300}$/
+};
+
+function setField(id, errId, ok, msg) {
+  const el = document.getElementById(id);
+  const er = document.getElementById(errId);
+  el.classList.toggle('invalid', !ok);
+  el.classList.toggle('valid',    ok);
+  er.textContent = ok ? '' : msg;
+  return ok;
+}
+
+function clearErrors() {
+  ['fname','femail','fphone','fservice','fqty','fdate','fnotes'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) { el.classList.remove('invalid','valid'); }
+  });
+  ['nameErr','emailErr','phoneErr','serviceErr','qtyErr','dateErr','fmtErr','notesErr']
+    .forEach(id => { const el = document.getElementById(id); if (el) el.textContent = ''; });
+}
+
+document.getElementById('bookForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let valid = true;
+
+  const name = document.getElementById('fname').value.trim();
+  valid &= setField('fname','nameErr', RX.name.test(name),
+    'Name must be 2–50 letters and spaces only.');
+
+  const email = document.getElementById('femail').value.trim();
+  valid &= setField('femail','emailErr', RX.email.test(email),
+    'Enter a valid email address (e.g. priya@studio.com).');
+
+  const phone = document.getElementById('fphone').value.trim();
+  valid &= setField('fphone','phoneErr', RX.phone.test(phone),
+    'Enter a valid 10-digit Indian mobile number starting with 6–9.');
+
+  const svc = document.getElementById('fservice').value;
+  valid &= setField('fservice','serviceErr', svc !== '',
+    'Please select a service.');
+
+  const qty = document.getElementById('fqty').value.trim();
+  valid &= setField('fqty','qtyErr', RX.qty.test(qty),
+    'Enter a valid quantity between 1 and 999.');
+
+  const dateVal = document.getElementById('fdate').value;
+  const today   = new Date().toISOString().split('T')[0];
+  const dateOk  = /^\d{4}-\d{2}-\d{2}$/.test(dateVal) && dateVal >= today;
+  valid &= setField('fdate','dateErr', dateOk,
+    'Select a valid delivery date (today or later).');
+
+  const fmtChecked = document.querySelector('input[name="fmt"]:checked');
+  const fmtErr = document.getElementById('fmtErr');
+  if (!fmtChecked) { fmtErr.textContent = 'Please choose an output format.'; valid = false; }
+  else             { fmtErr.textContent = ''; }
+
+  const notes = document.getElementById('fnotes').value;
+  valid &= setField('fnotes','notesErr', RX.notes.test(notes),
+    'Instructions must not exceed 300 characters.');
+
+  if (valid) {
+    document.getElementById('successModal').classList.add('show');
+  }
+});
+</script>
+</body>
+</html>
